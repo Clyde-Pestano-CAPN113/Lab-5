@@ -1,0 +1,161 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+h1,footer{
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+.noto-music-regular {
+    font-family: "Noto Music", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.column {
+    flex: 1;
+    margin: 0 5px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image:hover .middle {
+    opacity: 1; 
+}
+
+.image:hover img {
+    opacity: 0.3; 
+}
+
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+nav {
+    padding: 20px;
+    background-color: rgb(31, 104, 96);
+    position: sticky;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1px;
+    margin-right: 10px;
+    display: inline-block;
+}
+nav button{
+    color: white;
+    text-decoration: none;
+    padding: 1px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.bottombox{
+    margin-top: -20%;
+    padding: 20px;
+    color: green;
+}
+/*Created to stick things to the top right*/
+.StickTopRight{
+    float: right;
+    margin-left: 200px;
+    color: black;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        width: 80%;
+    }
+    .image {
+        position: relative;
+        overflow: hidden;
+    }
+    .image img {
+        width: 80%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    } 
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .image:hover .middle {
+        opacity: 1; 
+    }
+    
+    .image:hover img {
+        opacity: 0.3; 
+    }
+    
+    .text {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+    
+    nav {
+        padding: 20px;
+        background-color: rgb(31, 104, 96);
+        position: sticky;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 1px;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    nav button{
+        color: white;
+        text-decoration: none;
+        padding: 1px;
+        margin-right: 100px;
+        display: inline-block;
+    }
+    .bottombox{
+        margin-top: -20%;
+        padding: 20px;
+        color: green;
+    }
+    
+}
